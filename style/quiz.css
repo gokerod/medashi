@@ -1,0 +1,12 @@
+.container {
+  margin-top: 200px;
+}
+.quizDetailInput {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid gray;
+  border-radius: 0;
+}
+.quizDetailItem {
+  margin-right: 100px;
+}
