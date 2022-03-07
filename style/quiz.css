@@ -10,3 +10,6 @@
 .quizDetailItem {
   margin-right: 100px;
 }
+.question {
+  max-height: 500px;
+}
