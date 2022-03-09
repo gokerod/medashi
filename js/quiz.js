@@ -4,7 +4,7 @@ incrementQuizDuration = document.querySelector("#incrementDurationButton");
 decrementQuizDuration = document.querySelector("#decrementDurationButton");
 quizDurationValue = document.querySelector(".quizDurationValue");
 
-createNewQuestion = () => {
+CreateNewQuestoin = () => {
   question = document.createElement("tr");
   question.className = "question";
   question.id = new Date().getTime();
@@ -71,7 +71,7 @@ createNewQuestion = () => {
 </td>`;
   questionList.appendChild(question);
 };
-createNewOption = (questionId) => {
+CreateNewOption = (questionId) => {
   option = document.createElement("div");
   option.className = "input-group input-group-sm mb-2";
   option.innerHTML = `<div class="input-group-prepend">
@@ -88,7 +88,7 @@ createNewOption = (questionId) => {
 
 // Adding Question
 addNewQuestionButton.addEventListener("click", () => {
-  createNewQuestion();
+  CreateNewQuestoin();
 });
 
 questionList.addEventListener("click", (e) => {
@@ -107,7 +107,7 @@ questionList.addEventListener("click", (e) => {
   // Adding Option
   else if (e.target.matches("#addOptionButton")) {
     questionId = e.target.parentNode.parentNode.parentNode.id;
-    e.target.parentNode.parentNode.appendChild(createNewOption(questionId));
+    e.target.parentNode.parentNode.appendChild(CreateNewOption(questionId));
   }
 });
 

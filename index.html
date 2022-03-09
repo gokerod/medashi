@@ -12,94 +12,54 @@
 
 <body>
     <div class="container">
+        <h2>Chewata</h2>
         <div class="quizTable overflow-auto">
             <table class="table table-borderless table-hover">
                 <thead>
                     <tr>
-                        <th>Date created</th>
                         <th>Name</th>
+                        <th>No Question</th>
                         <th>Description</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="quizList">
                     <tr>
-                        <td class="col-2">2022-00-00</td>
-                        <td class="col-3">African Cup</td>
+                        <td class="col-2">African Cup</td>
+                        <td class="col-2">6</td>
                         <td>Lorem ipsum dolor, sit amet consectetur elit. Repudiandae, tenetur? Voluptatibus quo itaque
                         </td>
                     </tr>
                     <tr>
-                        <td class="col-2">2022-00-00</td>
-                        <td class="col-3">African Cup</td>
+                        <td class="col-2">African Cup</td>
+                        <td class="col-2">6</td>
                         <td>Lorem ipsum dolor, sit amet consectetur elit. Repudiandae, tenetur? Voluptatibus quo itaque
                         </td>
                     </tr>
                     <tr>
-                        <td class="col-2">2022-00-00</td>
-                        <td class="col-3">African Cup</td>
+                        <td class="col-2">African Cup</td>
+                        <td class="col-2">6</td>
                         <td>Lorem ipsum dolor, sit amet consectetur elit. Repudiandae, tenetur? Voluptatibus quo itaque
                         </td>
                     </tr>
                     <tr>
-                        <td class="col-2">2022-00-00</td>
-                        <td class="col-3">African Cup</td>
+                        <td class="col-2">African Cup</td>
+                        <td class="col-2">6</td>
                         <td>Lorem ipsum dolor, sit amet consectetur elit. Repudiandae, tenetur? Voluptatibus quo itaque
                         </td>
                     </tr>
                     <tr>
-                        <td class="col-2">2022-00-00</td>
-                        <td class="col-3">African Cup</td>
+                        <td class="col-2">African Cup</td>
+                        <td class="col-2">6</td>
                         <td>Lorem ipsum dolor, sit amet consectetur elit. Repudiandae, tenetur? Voluptatibus quo itaque
                         </td>
                     </tr>
                     <tr>
-                        <td class="col-2">2022-00-00</td>
-                        <td class="col-3">African Cup</td>
+                        <td class="col-2">African Cup</td>
+                        <td class="col-2">6</td>
                         <td>Lorem ipsum dolor, sit amet consectetur elit. Repudiandae, tenetur? Voluptatibus quo itaque
                         </td>
                     </tr>
-                    <tr>
-                        <td class="col-2">2022-00-00</td>
-                        <td class="col-3">African Cup</td>
-                        <td>Lorem ipsum dolor, sit amet consectetur elit. Repudiandae, tenetur? Voluptatibus quo itaque
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-2">2022-00-00</td>
-                        <td class="col-3">African Cup</td>
-                        <td>Lorem ipsum dolor, sit amet consectetur elit. Repudiandae, tenetur? Voluptatibus quo itaque
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-2">2022-00-00</td>
-                        <td class="col-3">African Cup</td>
-                        <td>Lorem ipsum dolor, sit amet consectetur elit. Repudiandae, tenetur? Voluptatibus quo itaque
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-2">2022-00-00</td>
-                        <td class="col-3">African Cup</td>
-                        <td>Lorem ipsum dolor, sit amet consectetur elit. Repudiandae, tenetur? Voluptatibus quo itaque
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-2">2022-00-00</td>
-                        <td class="col-3">African Cup</td>
-                        <td>Lorem ipsum dolor, sit amet consectetur elit. Repudiandae, tenetur? Voluptatibus quo itaque
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-2">2022-00-00</td>
-                        <td class="col-3">African Cup</td>
-                        <td>Lorem ipsum dolor, sit amet consectetur elit. Repudiandae, tenetur? Voluptatibus quo itaque
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-2">2022-00-00</td>
-                        <td class="col-3">African Cup</td>
-                        <td>Lorem ipsum dolor, sit amet consectetur elit. Repudiandae, tenetur? Voluptatibus quo itaque
-                        </td>
-                    </tr>
+
 
                 </tbody>
             </table>
@@ -120,17 +80,18 @@
                         <form>
                             <div class="mb-3">
                                 <label for="quizName" class="col-form-label">Name:</label>
-                                <input type="text" class="form-control" id="quizName">
+                                <input type="text" class="form-control" id="quizName" value="">
                             </div>
                             <div class="mb-3">
                                 <label for="description" class="col-form-label">Description:</label>
-                                <textarea class="form-control" id="description"></textarea>
+                                <textarea class="form-control" id="quizDescription" value=""></textarea>
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-secondary">Send message</button>
+                        <button type="button" class="btn btn-secondary" id="closeQuizAddingWindow"
+                            data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary" id="addQuizButton">Add Quiz</button>
                     </div>
                 </div>
             </div>
