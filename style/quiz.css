@@ -1,15 +1,25 @@
 .container {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 .quizDetailInput {
   border: 0;
   outline: 0;
   border-bottom: 2px solid gray;
   border-radius: 0;
+  width: 100%;
 }
 .quizDetailItem {
   margin-right: 100px;
+  margin-top: 5px;
+  padding: 5px;
 }
 .question {
   max-height: 500px;
+}
+.quizDetailForm {
+  display: grid;
+  grid-template-columns: repeat(3, 4fr);
+}
+.quizDurationValue {
+  text-align: center;
 }
