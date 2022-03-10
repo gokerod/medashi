@@ -4,6 +4,11 @@ closeQuizAddingWindow = document.querySelector("#closeQuizAddingWindow");
 quizName = document.querySelector("#quizName");
 quizDescription = document.querySelector("#quizDescription");
 
+closeQuizAddingWindow.addEventListener("click", () => {
+  quizName.value = "";
+  quizDescription.value = "";
+});
+
 CreateNewQuiz = (title, description) => {
   quiz = document.createElement("tr");
   quiz.innerHTML = `
@@ -15,7 +20,5 @@ CreateNewQuiz = (title, description) => {
 
 addNewQuiz.addEventListener("click", () => {
   quizList.appendChild(CreateNewQuiz(quizName.value, quizDescription.value));
-  quizName.value = "";
-  quizDescription.value = "";
   closeQuizAddingWindow.click();
 });
